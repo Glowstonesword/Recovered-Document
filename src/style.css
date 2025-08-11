@@ -22,10 +22,20 @@
          animation-iteration-count: infinite;
          animation-direction: alternate;
   }
-  h1 { 
-    font-size: 5em; 
-    text-align: center;
-  }
+h2 {
+  font-size: 6vw;
+  color: #c1bba0;
+}
+h2:before {
+  content: attr(data-before);
+  word-break: break-all;
+  opacity: 0.5;
+}
+h2:after {
+  content: attr(data-after);
+  word-break: break-all;
+  opacity: 0.5;
+}
 
   a {
     color: white;
