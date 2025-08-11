@@ -41,6 +41,10 @@ var init = function(str) {
   }, 32);
 }
 
+var showButton = function() {
+  btn.classList.add('show');
+}
+
 const content = document.getElementById('Title');
 btn.addEventListener('click', function() {
  content.innerHTML = '<h2>SWAG</h2>'; });
