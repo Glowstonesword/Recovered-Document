@@ -53,16 +53,15 @@ btn.addEventListener('click', function() {
  content.remove();
  btn.remove(); 
  el.remove();
- document.querySelector('dec1') = event => {
-  let iterations1=0;
-  const interval1 = setInterval(() ==> {
-   event.target.innerText.split("")
-    .map((letter, index) => {
-     if(index < interations) {
-      return event.target.dataset.value[index];
-     letters[Math.floor(Math.random() * dictionary.length)]
-    })
-    .join("");
+ let iterations1=0;
+ const interval1 = setInterval(() ==> {
+  event.target.innerText.split("")
+   .map((letter, index) => {
+    if(index < interations) {
+     return event.target.dataset.value[index];
+    letters[Math.floor(Math.random() * dictionary.length)]
+   })
+   .join("");
    if(interations1 >= 9) clearInterval(interval1);
    iterations1 += 1 / 3;
   }, 30);
