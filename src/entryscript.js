@@ -49,7 +49,7 @@ var showButton = function() {
 
 const content = document.getElementById('Title');
 btn.addEventListener('click', function() {
- content.innerHTML = '<dec1></dec1><br></br><dec2></dec2><script  src="./src/encryptionbreak.js"></script>;
+ content.innerHTML = '<dec1></dec1><br></br><dec2></dec2><script  src="./src/encryptionbreak.js"></script>';
  btn.remove(); 
  el.remove();
 });
