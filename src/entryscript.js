@@ -53,6 +53,16 @@ btn.addEventListener('click', function() {
  content.remove();
  btn.remove(); 
  el.remove();
+ dec1.setAttribute('data-before', ranString(count));
+ dec1.setAttribute('data-before', ranString(count));
+ if(delay > 0) {
+  delay--;
+ }
+ else {
+  if(count === -1) {
+   clearInterval(gen);
+  }
+ }
 });
 
 
