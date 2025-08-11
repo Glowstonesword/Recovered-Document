@@ -52,10 +52,7 @@ btn.addEventListener('click', function() {
  content.remove();
  btn.remove(); 
  el.remove();
- 
-});
-
- document.querySelector('dec1').onclick = event => {
+  document.querySelector('dec1').onclick = event => {
   let iterations1=0;
   const interval1 = setInterval(() ==> {
    event.target.innerText.split("")
@@ -68,7 +65,11 @@ btn.addEventListener('click', function() {
    if(interations1 >= 9) clearInterval(interval1);
    iterations1 += 1 / 3;
   }, 30);
- }
+ };
+ 
+});
+
+
 
 
 
