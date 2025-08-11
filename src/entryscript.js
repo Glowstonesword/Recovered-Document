@@ -15,7 +15,31 @@ var ranString = function(amt) {
   return string;
 }
 
-
+var init = function(str) {
+  var count = str.length;
+  var delay = 50;
+  
+  btn.classList.remove('show');
+  el.innerHTML = '';
+  
+  var gen = setInterval(function() {
+    el.setAttribute('data-before', ranString(count));
+    el.setAttribute('data-after', ranString(count));
+    if(delay > 0) {
+      delay--;
+    }
+    else {
+      if(count < str.length) {
+        el.innerHTML += str[str.length - count-1];
+      }
+      count--;
+      if(count === -1) {
+        clearInterval(gen);
+        showButton();
+      }
+    }
+  }, 32);
+}
 
 init('File Encrypted');
 
@@ -27,5 +51,5 @@ const content = document.getElementById('Title');
 btn.addEventListener('click', function() {
  content.innerHTML = '<h2>SWAG</h2>';
  btn.remove(); 
- init.remove();
+ el.remove();
 });
