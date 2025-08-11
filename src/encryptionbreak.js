@@ -1,7 +1,7 @@
 var dictionary = "0123456789qwertyuiopasdfghjklzxcvbnm!?></\a`~+*=@#$%".split('');
 
-var lvl1 = document.getElementById('lvl1');
-var lvl2 = document.getElementById('lvl2');
+var lvl1 = document.querySelector('dec1');
+var lvl2 = document.querySelector('dec2');
 
 var ran = function() {
  return Math.floor(Math.random() * dictionary.length)
@@ -23,21 +23,21 @@ var init = function(str) {
   lvl2.innerHTML = '';
   
   var gen = setInterval(function() {
-    lvl1.setAttribute('data-before', ranString(count));
-    lvl1.setAttribute('data-after', ranString(count));
-    lvl2.setAttribute('data-before', ranString(count));
-    lvl2.setAttribute('data-after', ranString(count));
+    dec1.setAttribute('data-before', ranString(count));
+    dec1.setAttribute('data-after', ranString(count));
+    dec2.setAttribute('data-before', ranString(count));
+    dec2.setAttribute('data-after', ranString(count));
     if(delay > 0) {
       delay--;
     }
     else {
       if(count < str.length) {
-        el.innerHTML += str[str.length - count-1];
+        dec1.innerHTML += str[str.length - count-1];
+        dec2.innerHTML += str[str.length - count-1];
       }
       count--;
       if(count === -1) {
         clearInterval(gen);
-        showButton();
       }
     }
   }, 32);
