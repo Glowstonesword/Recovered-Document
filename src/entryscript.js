@@ -53,6 +53,7 @@ btn.addEventListener('click', function() {
  content.remove();
  btn.remove(); 
  el.remove();
+ gen = setInterval(function() {
  dec1.setAttribute('data-before', ranString(count));
  dec1.setAttribute('data-before', ranString(count));
  if(delay > 0) {
@@ -62,6 +63,7 @@ btn.addEventListener('click', function() {
   if(count === -1) {
    clearInterval(gen);
   }
+ }
  }
 });
 
