@@ -47,7 +47,7 @@ var showButton = function() {
 
 const content = document.getElementById('Title');
 btn.addEventListener('click', function() {
- content.innerHTML = '<h2>SWAG</h2>'; });
+ content.innerHTML = '<h2>SWAG</h2>';
  btn.innerHTML = ''; });
 
 init('File Encrypted');
