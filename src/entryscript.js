@@ -41,8 +41,9 @@ var init = function(str) {
   }, 32);
 }
 
+const content = document.getElementById('Title');
 var showButton = function() {
-  btn.classList.add('show');
+  content.innerHTML = '<h2>SWAG</h2>';
 }
 
 init('File Encrypted');
