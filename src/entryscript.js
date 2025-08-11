@@ -2,6 +2,7 @@ var dictionary = "0123456789qwertyuiopasdfghjklzxcvbnm!?></\a`~+*=@#$%".split(''
 
 var el = document.querySelector('h1');
 var btn = document.querySelector('.button');
+var dec1 = document.querySelector('dec1');
 
 var ran = function() {
  return Math.floor(Math.random() * dictionary.length)
@@ -52,7 +53,7 @@ btn.addEventListener('click', function() {
  content.remove();
  btn.remove(); 
  el.remove();
-  document.querySelector('dec1').onclick = event => {
+ document.querySelector('dec1') = event => {
   let iterations1=0;
   const interval1 = setInterval(() ==> {
    event.target.innerText.split("")
@@ -66,7 +67,6 @@ btn.addEventListener('click', function() {
    iterations1 += 1 / 3;
   }, 30);
  };
- 
 });
 
 
