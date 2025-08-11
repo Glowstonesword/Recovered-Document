@@ -41,6 +41,8 @@ var init = function(str) {
   }, 32);
 }
 
+init('File Encrypted');
+
 var showButton = function() {
   btn.classList.add('show');
 }
@@ -51,5 +53,3 @@ btn.addEventListener('click', function() {
  btn.remove(); 
  init.remove()
 });
-
-init('File Encrypted');
