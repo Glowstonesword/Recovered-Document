@@ -1,6 +1,6 @@
 var dictionary = "0123456789qwertyuiopasdfghjklzxcvbnm!?></\a`~+*=@#$%".split('');
 
-var el = document.querySelector('h1');
+var el = document.getElementById('Decrypt');
 var btn = document.querySelector('.button');
 
 var ran = function() {
