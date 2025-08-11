@@ -48,6 +48,8 @@ var showButton = function() {
 const content = document.getElementById('Title');
 btn.addEventListener('click', function() {
  content.innerHTML = '<h2>SWAG</h2>';
- btn.remove(); });
+ btn.remove(); 
+ init.remove()
+});
 
 init('File Encrypted');
