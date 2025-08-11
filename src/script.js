@@ -45,4 +45,4 @@ var showButton = function() {
   btn.classList.add('show');
 }
 
-init('Decrypted 👍');
+init('Decryption Successful');
