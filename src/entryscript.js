@@ -66,7 +66,6 @@ btn.addEventListener('click', function() {
    iterations1 += 1 / 3;
   }, 30);
  }
- document.querySelector('dec2');
  
 });
 
