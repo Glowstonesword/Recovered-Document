@@ -52,6 +52,9 @@ btn.addEventListener('click', function() {
  content.remove();
  btn.remove(); 
  el.remove();
+ 
+});
+
  document.querySelector('dec1').onclick = event => {
   let iterations1=0;
   const interval1 = setInterval(() ==> {
@@ -66,8 +69,6 @@ btn.addEventListener('click', function() {
    iterations1 += 1 / 3;
   }, 30);
  }
- 
-});
 
 
 
