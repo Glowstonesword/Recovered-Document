@@ -64,7 +64,7 @@ btn.addEventListener('click', function() {
    clearInterval(gen1);
   }
  }
- }
+ };
 });
 
 
